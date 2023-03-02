@@ -1,8 +1,8 @@
 <!--
  * @Author: tangdaoyong
  * @Date: 2021-08-17 16:21:10
- * @LastEditors: tangdaoyong
- * @LastEditTime: 2021-08-17 16:21:41
+ * @LastEditors: matiastang
+ * @LastEditTime: 2023-03-02 10:03:43
  * @Description: GitHub多账号
 -->
 # GitHub多账号
@@ -77,6 +77,10 @@ IdentityFile ~/.ssh/github/matias_github_key/id_rsa
 
 * 启动ssh-agent环境，先执行命令(出现 Agent pid * 意味着开启成功)：
 >$eval "$(ssh-agent -s)" # start the ssh-agent in the background
+
+```sh
+$ eval `ssh-agent -s`
+```
 
 然后添加密钥 id_rsa (.ssh/github/matias_github_key)：
 >$ssh-add ~/.ssh/github/matias_github_key/id_rsa
