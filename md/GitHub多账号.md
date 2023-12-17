@@ -89,6 +89,14 @@ $ eval `ssh-agent -s`
 然后添加默认密钥 id_rsa(.ssh)：
 >$ssh-add ~/.ssh/id_rsa
 
+* `ssh-add -l`查看已添加的秘钥
+```sh
+$ ssh-add ~/.ssh/mt_github/id_rsa
+Identity added: /home/tdy/.ssh/mt_github/id_rsa (邮箱)
+$ ssh-add -l
+3072 SHA256:QS+PzzDdvjvK8oFgg/GjxJl8GwroxdR7KgwSJYQbyYk 邮箱 (RSA)
+```
+
 [Linux命令：ssh-agent](https://man.linuxde.net/ssh-agent)
 [Linux命令：ssh-add](https://man.linuxde.net/ssh-add)
 
