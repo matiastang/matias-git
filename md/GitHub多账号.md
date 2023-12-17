@@ -124,3 +124,22 @@ Hi matiastang! You've successfully authenticated, but GitHub does not provide sh
 Username for 'https://github.com': 自己的github账号名称
 Password for 'https://matiastang@github.com': github账号密码
 ```
+## git 全局配置
+
+* 第一次命令行`commit`代码时需要补充作者信息
+
+```sh
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'tdy@tangdaoyong.(none)')
+```
