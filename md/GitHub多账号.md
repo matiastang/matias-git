@@ -28,7 +28,7 @@ GitHub中一个账号可以拥有多个公钥，所有重新生成公钥添加
 3. 添加公钥到GitHub
 4. 添加配置
 
-* 打开`~/.ssh/config`,如果没有就创建一个config文件($ git touch  config命令创建，或者如下命令也可以)
+* 打开`~/.ssh/config`,如果没有就创建一个config文件($ touch config命令创建，或者如下命令也可以)
 > $vim ~/.ssh/config
 
 * 写入新的host配置(格式如下)
@@ -44,7 +44,7 @@ IdentityFile ~/.ssh/github/matias_github_key/id_rsa
 * 查看(确认修改)
 > $cat config
 
-5. 将GitHub SSH仓库地址中的git@github.com替换成新建的Host别名
+5. 拉取代码时将GitHub SSH仓库地址中的git@github.com替换成新建的Host别名
 
 * 关于替换的规则
 原来的项目的ssh地址为：
